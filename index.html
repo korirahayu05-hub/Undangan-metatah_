@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Upacara Manusa Yadnya &mdash; Metatah</title>
+<meta name="description" content="Undangan Digital Upacara Manusa Yadnya Metatah">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" id="app">
+
+  <!-- ============ HALAMAN 1 : COVER ============ -->
+  <section id="cover" class="cover" aria-label="Sampul Undangan">
+    <div class="cover__bg" aria-hidden="true"></div>
+
+    <div class="cover__content">
+      <img class="cover__ornament-top" src="assets/img/ornament-top.png" alt="" aria-hidden="true">
+
+      <div class="cover__heading">
+        <p class="script-title">Upacara<br>Manusa Yadnya</p>
+        <h1 class="brush-title">Metatah</h1>
+        <p class="cover__date">11 September 2026</p>
+      </div>
+
+      <img class="cover__ornament-swirl" src="assets/img/ornament-swirl.png" alt="" aria-hidden="true">
+
+      <div class="cover__invite-text">
+        <p class="invite-to">Yth. Kepada Bapak/Ibu/Saudara/i</p>
+        <p class="invite-guest">Tamu Undangan</p>
+      </div>
+
+      <button type="button" id="btnOpen" class="btn-open">Buka Undangan</button>
+    </div>
+  </section>
+
+  <!-- ============ HALAMAN 2 : UNDANGAN (LONG SCROLL) ============ -->
+  <main id="invitation" class="invitation" aria-label="Isi Undangan" hidden>
+    <div class="invitation__bg" aria-hidden="true"></div>
+
+    <!-- ==== SECTION: HEADER / PEMBUKA ==== -->
+    <section class="sec sec--intro reveal">
+      <img class="symbol-swastika" src="assets/img/swastika.svg" alt="Simbol Om" width="140" height="148">
+      <img class="symbol-om" src="assets/img/om-swastyastu.svg" alt="Om Swastyastu" width="180" height="59">
+
+      <h2 class="section-title">UPACARA MANUSA YADNYA</h2>
+
+      <img class="ornament-small" src="assets/img/ornament-small.png" alt="" aria-hidden="true">
+
+      <p class="intro-text">
+        Atas Asung Kertha Wara Nugraha Ida Sang Hyang Widhi Wasa/ Tuhan Yang
+        Maha Esa, Kami Bermaksud Mengundang Bapak/ Ibu/ Saudara/ I Pada
+        Upacara Manusa Yadnya Mepandes/Potong Gigi Putri Kami.
+      </p>
+    </section>
+
+    <!-- ==== SECTION: MEMPELAI / ANAK ==== -->
+    <section class="sec reveal">
+      <div class="card">
+        <img class="ornament-swirl-sm" src="assets/img/ornament-swirl.png" alt="" aria-hidden="true">
+
+        <p class="child-names">
+          Putu Asih Rahayu<br>
+          <span class="amp">&amp;</span><br>
+          Kadek Kori Rahayu
+        </p>
+
+        <p class="parent-label">Putri Dari Pasangan</p>
+
+        <p class="parent-names">
+          Kadek Kardiasa<br>
+          <span class="amp">&amp;</span><br>
+          Putu Kamarini
+        </p>
+      </div>
+    </section>
+
+    <!-- ==== SECTION: ACARA KAMI ==== -->
+    <section class="sec reveal">
+      <div class="card">
+        <h3 class="script-subtitle">Acara Kami</h3>
+
+        <p class="acara-desc">
+          Merupakan Suatu Kehormatan Dan Kebahagiaan Bagi Kami, Apabila
+          Bapak/Saudara/I Berkenan Hadir Untuk Memberikan Doa Restu Kepada
+          Kami Pada&nbsp;:
+        </p>
+
+        <div class="info-grid">
+          <div class="info-box">
+            <h4>Tanggal</h4>
+            <p>11 September 2026</p>
+          </div>
+          <div class="info-box">
+            <h4>Waktu</h4>
+            <p>10.00 WITA &ndash; Selesai</p>
+          </div>
+        </div>
+
+        <div class="info-box info-box--full">
+          <h4>Tempat</h4>
+          <p>Banjar Dinas Brongbong, Desa Celukanbawang</p>
+          <a class="btn-maps"
+             href="https://maps.google.com/maps?q=-8.20438%2C114.8689478&z=17&hl=en"
+             target="_blank" rel="noopener noreferrer">
+            <img src="assets/img/pin.svg" alt="" width="10" height="14" aria-hidden="true">
+            <span>Petunjuk Ke Lokasi</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== FOOTER ==== -->
+    <footer class="footer reveal">
+      <p>Edited By: Kadek Kori Rahayu</p>
+    </footer>
+
+  </main>
+
+  <!-- ==== MUSIC CONTROL (floating) ==== -->
+  <button type="button" id="btnMusic" class="btn-music" hidden aria-pressed="false" aria-label="Putar atau jeda musik">
+    <svg class="btn-music__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    </svg>
+  </button>
+
+  <audio id="bgMusic" src="assets/audio/music.mp3" loop preload="none"></audio>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
